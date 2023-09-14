@@ -12,7 +12,7 @@ function countarea() {
 function countperimeter() {
   const PerimeterSide = document.getElementById("perimeter-side");
   const PerimeterResult = document.getElementById("perimeter-result");
-  if (PerimeterResult.value < 0) {
+  if (PerimeterSide.value < 0) {
     PerimeterResult.innerText = "Nilai sisi berupa angka dan harus positif";
     return;
   }
