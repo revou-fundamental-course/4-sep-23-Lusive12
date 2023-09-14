@@ -1,10 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" >
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Kalkulator Matematik Persegi</title>
-    <link rel="stylesheet" href="./katik.css">
+    <link rel="stylesheet" href="./katik.css" />
     <script src="./katik.js"></script>
   </head>
   <body>
@@ -16,23 +16,50 @@
     <section class="penjelasankatik">
       <h2>Welcome to Katik!!</h2>
       <p>Halo semua, Selamat datang di Katik!</p>
-      <p>Project Web Design Sederhana untuk menghitung Luas dan Keliling Persegi</p>
+      <p>
+        Project Web Design Sederhana untuk menghitung Luas dan Keliling Persegi
+      </p>
     </section>
 
-    <section class="desc_luas">
-      <h2>Luas Persegi</h2>
-      <img class="gambarluas" src="./rumus persegi.png" alt="rumus luas persegi">
+    <section class="description">
+      <h2 class="titleh2">Luas dan Keliling Persegi</h2>
+      <img src="./rumus persegi.png" alt="rumus luas persegi" />
     </section>
 
-    <section class="luasInputSection">
-      <h2 id="hitungluas">Hitung Luas Persegi</h2>
-      <label id="InputField">Sisi Persegi</label>
-      <input type="number" id="InputField" placeholder="Masukkan sisi">
+    <section class="InputSection">
+      <h3>Hitung Luas Persegi</h3>
+      <p>Sisi dalam cm</p>
+      <input type="number" id="area-side" placeholder="Masukkan Sisi Persegi" />
     </section>
 
     <section class="inputButtonSection">
-        <button>Hitung</button>
-        <button>Reset</button>
+      <button onclick="countarea()">Hitung</button>
+      <button onclick="reset()">Reset</button>
     </section>
+
+    <div class="result">
+      <p id="area-result"></p>
+      <br />
+      <br />
+    </div>
+
+    <section class="InputSection">
+      <h3>Hitung Keliling Persegi</h3>
+      <p>Sisi dalam cm</p>
+      <input
+        id="perimeter-side"
+        type="number"
+        placeholder="Masukkan Sisi Persegi"
+      />
+    </section>
+
+    <section class="inputButtonSection">
+      <button onclick="countperimeter()">Hitung</button>
+      <button onclick="reset">Reset</button>
+    </section>
+
+    <div class="result">
+      <p id="perimeter-result"></p>
+    </div>
   </body>
 </html>
